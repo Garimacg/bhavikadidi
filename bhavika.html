@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Be My Valentine 💖</title>
+<style>
+body {
+  margin: 0;
+  font-family: 'Comic Sans MS', cursive;
+  background: linear-gradient(135deg, #ffb6c1, #ffc0cb);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  color: #d6336c;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  max-width: 360px;
+  width: 90%;
+}
+
+img.main {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+a.button {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 22px;
+  background: #ff69b4;
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+  font-size: 18px;
+}
+
+a.button:hover {
+  background: #ff1493;
+  transform: scale(1.1);
+}
+
+.page { display: none; }
+#page1 { display: block; }
+#page2:target, #home:target, #restro:target, #cafe:target, #picnic:target {
+  display: block;
+}
+#page2:target ~ #page1 { display: none; }
+
+.options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.option {
+  background: #ffe4ec;
+  border-radius: 15px;
+  padding: 8px;
+  text-decoration: none;
+  color: #d6336c;
+}
+
+.option img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.option:hover {
+  transform: scale(1.08);
+  background: #ffb6c1;
+}
+</style>
+</head>
+<body>
+
+<!-- PAGE 1 -->
+<div class="card page" id="page1">
+  <img src="bhavika.photo.jpg" class="main">
+  <h1>Will you be my Valentine, Shishir? 💘</h1>
+  <a href="#page2" class="button">Yes 💖</a>
+  <a href="#page1" class="button">No 😏</a>
+</div>
+
+<!-- PAGE 2 -->
+<div class="card page" id="page2">
+  <h1>How will we celebrate, Shishir? 💕</h1>
+  <div class="options">
+    <a href="#home" class="option">
+      <img src="home.png">
+      At Home 🏠
+    </a>
+    <a href="#restro" class="option">
+      <img src="restro.png">
+      Restaurant 🍽️
+    </a>
+    <a href="#cafe" class="option">
+      <img src="cafe.png">
+      Cafe ☕
+    </a>
+    <a href="#picnic" class="option">
+      <img src="STADIUM.jpg">
+      Match day! 🏟️🏏 
+    </a>
+  </div>
+</div>
+
+<!-- FINAL SCREENS -->
+<div class="card page" id="home">
+  <h1>Perfect choice, Shishir 💖</h1>
+  <p>Cozy home date with you sounds magical 🥰</p>
+</div>
+
+<div class="card page" id="restro">
+  <h1>Perfect choice, Shishir 💖</h1>
+  <p>Romantic dinner just us two 🍷</p>
+</div>
+
+<div class="card page" id="cafe">
+  <h1>Perfect choice, Shishir 💖</h1>
+  <p>Coffee, laughs & you ☕😍</p>
+</div>
+
+<div class="card page" id="picnic">
+  <h1>Perfect choice, Shishir 💖</h1>
+  <p>perfect match evening with out 🌸</p>
+</div>
+
+</body>
+</html>
